@@ -1,0 +1,331 @@
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .top_bar {
+    background-color: #05411e;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .user_info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile_img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Make the image round */
+    margin-right: 10px;
+  }
+  
+  .nickname {
+    font-size: 25px;
+    font-weight: 800;
+    color: #f4fbc5;  /* changed from #fff to a darker color for visibility */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    display: block; /* ensure the nickname appears on a new line */
+    text-align: center; /* center the nickname text */
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown_content {
+    display: block;
+  }
+  
+  /* Style for the Lobby button */
+  .lobby_button {
+    margin-left: auto; /* Align to the right */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .lobby_button img {
+    margin-right: 8px; /* Space between icon and text */
+    width : 20px;
+    height: 20px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+   /* ... existing styles ... */
+
+  /* Style for the 'My Chat Rooms' section header */
+  .my-chat-rooms h1 {
+    margin-bottom: 20px; /* Add space below the header */
+  }
+
+  /* Style for the chat group header */
+  .chat-group-header {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr; /* Adjust the column sizes as needed */
+    font-weight: bold;
+    padding-bottom: 10px; /* Space below the header */
+    border-bottom: 1px solid #ccc; /* Border below the header */
+    margin-bottom: 10px; /* Space between header and first group */
+    margin-right: 20px;
+  }
+
+  .chat-group {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr; /* Columns should match the header */
+    align-items: center;
+    border: 1px solid #ccc; /* Add border around each group */
+    margin-bottom: 10px; /* Space between groups */
+    padding: 10px; /* Padding inside each group */
+  }
+  
+  /* Style for the leave button */
+  .leave-button {
+    font-size: 15px;
+    background-color: #fff;
+    padding: 10px 30px; /* Adjust padding as needed */
+    border: 1px solid #ccc; /* Example border, adjust as needed */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    cursor: pointer; /* Change the cursor to pointer when hovering over the button */
+  }
+  
+  .leave-button:hover {
+    opacity: 0.8; /* Hover effect for the leave button */
+    background-color: #e63131;
+  }
+  
+  /* ... other styles ... */
+  
+  /* Style for the member counting div */
+  .chat-group .member-count {
+    justify-self: start; /* Align the content to the start (left) of the cell */
+    margin-right: 20px; /* Moves the member count 20px to the left within the cell */
+  }
+  
+  /* Ensure forms in the group take up the right amount of space */
+  .chat-group form {
+    justify-self: start; /* Align the form (and button) to the start (left) */
+    margin-right: 20px; /* Moves the form (and button) 20px to the left within the cell */
+  }
+
+
+
+  .chat-room-list {
+    width: 65%; /* Larger width for List of Chat Rooms */
+    background-color: #ddb0b0b6; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    
+  }
+  
+  /* Assuming .add-chat-group is directly under the body or a full-width container */
+  /* Assuming .add-chat-group is directly under a full-width container */
+  .add-chat-group {
+    display: flex;
+    justify-content: flex-end; /* Aligns the container to the right */
+    position: relative; /* Allows absolute positioning relative to this container */
+    height: 50px; /* Set a height to ensure there is space for absolute positioning */
+  }
+  
+  .add-chat-group button {
+    font-size: 15px;
+    background-color: #fff;
+    padding: 10px 30px; /* Adjust padding as needed */
+    border: 1px solid #ccc; /* Example border, adjust as needed */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    cursor: pointer; /* Change the cursor to pointer when hovering over the button */
+  }
+
+  .add-chat-group button:hover {
+    opacity: 0.8; /* Hover effect for the join button */
+    background-color: #f1c606; 
+  }
+  
+  /* If .add-chat-group is in another container with the title, you may need to adjust this code */
+  .list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* This will vertically center the button and the title */
+    margin-bottom: 40px; /* Adjust as needed for spacing */
+  }
+  
+  .join_button {
+    font-size: 15px;
+    background-color: #fff;
+    padding: 10px 30px; /* Adjust padding as needed */
+    border: 1px solid #ccc; /* Example border, adjust as needed */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    cursor: pointer; /* Change the cursor to pointer when hovering over the button */
+  }
+  
+  .join_button:hover {
+    opacity: 0.8; /* Hover effect for the join button */
+    background-color: #8df7a4; 
+  }
+
+
+
+
+
+  
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 10% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Style for the form inside the modal */
+  .chat-form-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .chat-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .chat-label {
+    margin-bottom: 5px;
+  }
+  
+  .chat-input[type="text"],
+  .chat-textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Specific styles for the chat room create button */
+  .chat-create-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #c8b7a6; /* Example color */
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  
+  }
+  
+  .chat-create-button:hover {
+    background-color: #758d71; /* Darker shade for hover effect */
+  }
+  
+  /* Close button inside the modal */
+  .chat-close-button {
+    color: #fafafa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .chat-close-button:hover,
+  .chat-close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+
+  .navigation {
+    text-align: center; /* Center the navigation links */
+    margin-top: 10px; /* Add some space above the navigation */
+    font-size: 1rem; /* Adjust font size as needed */
+  }
+  
+  .navigation a {
+    margin: 0 5px; /* Add horizontal space between navigation items */
+
+    text-decoration: none; /* Remove underlines from links */
+    color: #000000; /* Dark text for better readability */
+    background-color: #f0f0f0; /* Light background for the buttons */
+    padding: 5px 15px; /* Padding inside the buttons */
+    border: 1px solid #ffffff; /* Example border, adjust as needed */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .navigation a:hover {
+    background-color: #f1c606; /* Slightly darker background on hover */
+  }
+  
+  .navigation .current-page {
+    font-weight: bold; /* Make current page number bold */
+    color: #000; /* Make it stand out with a different color */
+    
+  }
+  
+  
+  /* Add styles for disabled links if needed */
+  .navigation .disabled {
+    background-color: #f0f0f0;
+    color: #000000; /* Lighter text for disabled links */
+    cursor: not-allowed; /* Change cursor to indicate disabled link */
+    border: 1px solid #ffffff; /* Example border, adjust as needed */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
