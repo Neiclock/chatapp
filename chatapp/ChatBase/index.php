@@ -85,28 +85,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['login_id']) && isset($
 <head>
     <title>Login</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <style>
-        .container {
-            display: flex;
-            justify-content: space-between;
-        }
-        
-        .container .advertisement {
-            flex-basis: 30%;
-            margin: 0 20px;
-        }
-        
-        .container .login-form {
-            flex-basis: 60%;
-        }
-        
-        .advertisement img {
-            max-width: 100%;
-            max-height: 100%;
-            width: auto;
-            height: 400px;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
