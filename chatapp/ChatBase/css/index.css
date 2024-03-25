@@ -1,0 +1,75 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(to right top, #cfd9df, #e2ebf0, #ffffff);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  font-style: italic;
+  display: block;
+  margin-bottom: 10px;
+  color: #020202;
+  font-weight: 600;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+  border: 1px solid #a183e7;
+  border-radius: 5px;
+  box-sizing: border-box; /* Added for better box sizing */
+  transition: border 0.3s;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  background-color: #4cb6e0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #e7a643;
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+  color: #666;
+}
+
+p a {
+  color: #fc2c9e;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+p a:hover {
+  color: #414283;
+}
