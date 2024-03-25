@@ -73,3 +73,24 @@ p a {
 p a:hover {
   color: #414283;
 }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .advertisement {
+  flex-basis: 30%;
+  margin: 0 25px;
+}
+
+.container .login-form {
+  flex-basis: 60%;
+}
+
+.advertisement img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: 350px;
+}
